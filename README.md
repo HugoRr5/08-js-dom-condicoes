@@ -1,5 +1,5 @@
 # 08-js-dom-condicoes
 
-### Nome aluno(a)
+### Hugo Rodrigues Rocha
 
 [comment]: <> (Hugo Rodrigues rocha)

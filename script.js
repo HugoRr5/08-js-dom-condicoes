@@ -21,3 +21,52 @@ function carregar(){
     }
 }
 
+function verificar(){
+    var data = new Date()
+    var ano = data.getFullYear()
+    var fano =document.d=getElementById('txtano')
+    var res = document.querySelector('div#res')
+    if(fano.value.length==0 || fano.value > ano){
+        Window.alert('verifique os dados e tente novamente ')
+
+    }else {
+        var fsex = document.getElementsByTagName('radsex')
+        var idade =ano - Number(fano.value)
+        res.innerHTML='idade calculada:$(idade)'
+        var genero =''
+        var img = document.createElement('img')
+        if(fsex[0].checked){
+            genero='homem'
+            if(idade >=0 && idade <10){
+                //crianca
+            }else if (idade <21){
+            //jovem
+            }
+            else if (idade < 50){
+              // velho
+            }else {
+                // idoso
+            }
+
+        }else if(fsex[1].checked){
+            genero='Mulher'
+            if(idade >=0 && idade <10){
+                //crianca
+            }else if (idade <21){
+            //jovem
+            }
+            else if (idade < 50){
+              // velho
+            }else {
+                // idoso
+            }
+        }
+        res.style.textalign = 'center'
+        res.innerHTML = 'Detectamos $(genero) com $(idade) anos.'
+    }
+    }
+    
+
+
+
+

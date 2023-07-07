@@ -1,2 +1,5 @@
 # 08-js-dom-condicoes
-atividade web
+
+### Nome aluno(a)
+
+[comment]: <> (Hugo Rodrigues rocha)

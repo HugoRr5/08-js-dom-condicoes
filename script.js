@@ -3,20 +3,20 @@ function carregar(){
     var img = window.document.getElementById('imagem')
     var data = new Date()
     var hora=data.getHours()
-    msg.innerHTML =  'Agora sao ${hora}horas.'
+    msg.innerHTML =  `agora sao ${hora} horas.`
     if(hora >= 0 && hora < 12){
        //BOM DIA 
-       img.src ='foto do dia '
-       document.body.style.background = 'foto'
+       img.src ='foto-da-manha.png'
+       document.body.style.background = '#e2cd9f'
     }else if(hora >= 12 && hora <= 18){
        //BOA TARDE
-       img.src ='foto do tarde '
-       document.body.style.background = 'foto'
+       img.src ='foto-da-tarde.png '
+       document.body.style.background = '#b9846f'
 
     } else {
         //BOA NOITE
-        img.src ='foto do noite'
-        document.body.style.background = 'foto'
+        img.src ='foto-da-noite.png'
+        document.body.style.background = '#515154'
 
     }
 }

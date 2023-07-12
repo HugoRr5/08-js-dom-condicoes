@@ -24,7 +24,7 @@ function carregar(){
 function verificar(){
     var data = new Date()
     var ano = data.getFullYear()
-    var fano =document.d=getElementById('txtano')
+    var fano =document.getElementById('txtano')
     var res = document.querySelector('div#res')
     if(fano.value.length==0 || fano.value > ano){
         Window.alert('verifique os dados e tente novamente ')
@@ -35,8 +35,8 @@ function verificar(){
         res.innerHTML=`idade calculada:${idade}`
         var genero =''
         var img = document.createElement('img')
-        if(fsex[0].checked){
-            genero='homem'
+        if(fsex[1].checked){
+            genero='mas'
             if(idade >=0 && idade <10){
                 //crianca
                 img.setAttribute('src','foto-de-menino.png')
@@ -52,8 +52,8 @@ function verificar(){
                 img.setAttribute('src','foto-de-velho.png')
             }
 
-        }else if(fsex[1].checked){
-            genero='Mulher'
+        }else if(fsex[2].checked){
+            genero='fem'
             if(idade >=0 && idade <10){
                 //crianca
                 img.setAttribute('src','foto-de-menina.png')

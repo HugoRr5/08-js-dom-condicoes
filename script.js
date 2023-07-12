@@ -36,7 +36,7 @@ function verificar(){
         var genero =''
         var img = document.createElement('img')
         if(fsex[1].checked){
-            genero='mas'
+            genero='homem'
             if(idade >=0 && idade <10){
                 //crianca
                 img.setAttribute('src','foto-de-menino.png')
@@ -53,7 +53,7 @@ function verificar(){
             }
 
         }else if(fsex[2].checked){
-            genero='fem'
+            genero='mulher'
             if(idade >=0 && idade <10){
                 //crianca
                 img.setAttribute('src','foto-de-menina.png')
